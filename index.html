@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Evergreen Landscaping — Outdoor spaces, handled right.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#17332a;--muted:#617169;--cream:#f5f3ec;--paper:#fbfaf6;--line:#d9ddd5;--green:#285a45;--light:#dfe9df;--max:1240px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:"DM Sans",sans-serif}a{color:inherit;text-decoration:none}button,input,textarea{font:inherit}
+.nav{position:absolute;z-index:5;top:0;left:0;width:100%;padding:22px 5vw;display:flex;align-items:center;justify-content:space-between;color:#fff}.brand{font-weight:700;letter-spacing:-.04em;font-size:21px}.navlinks{display:flex;gap:28px;font-size:14px}.navcta{border:1px solid #ffffff99;padding:11px 17px;border-radius:999px;font-size:13px}
+.hero{min-height:650px;position:relative;display:flex;align-items:flex-end;overflow:hidden;background:linear-gradient(90deg,#0c1e16b0,#0c1e162e 70%),url("https://images.unsplash.com/photo-1558521958-0a228e77e984?auto=format&fit=crop&w=2200&q=88") center/cover}.hero:after{content:"";position:absolute;inset:auto 0 0;height:35%;background:linear-gradient(transparent,#08191275)}
+.hero-inner{position:relative;z-index:2;width:min(var(--max),90%);margin:0 auto 55px;color:#fff}.eyebrow,.kicker{font-size:11px;text-transform:uppercase;letter-spacing:.18em}.eyebrow{opacity:.82;margin-bottom:18px}
+h1{font-family:"Playfair Display",serif;font-size:clamp(54px,8vw,108px);line-height:.92;letter-spacing:-.055em;max-width:900px;margin:0 0 28px;font-weight:500}.hero-copy{max-width:520px;font-size:17px;line-height:1.6;color:#ffffffdb}.actions{display:flex;gap:12px;margin-top:28px;flex-wrap:wrap}
+.btn{border:0;border-radius:999px;padding:14px 21px;cursor:pointer;font-weight:600;font-size:14px}.primary{background:#fff;color:var(--ink)}.dark{background:var(--ink);color:#fff}.ghost{background:transparent;border:1px solid #ffffff99;color:#fff}
+.hero-card{position:absolute;right:5vw;bottom:54px;z-index:3;width:280px;background:#faf9f3f0;color:var(--ink);padding:18px;border-radius:18px;backdrop-filter:blur(10px)}.hero-card img{width:100%;height:130px;object-fit:cover;border-radius:12px}.hero-card small{display:block;margin-top:13px;color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.1em}.hero-card strong{display:block;margin-top:5px;font-family:"Playfair Display",serif;font-size:23px}
+section{padding:72px 5vw}.wrap{max-width:var(--max);margin:auto}.intro{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:end}.kicker{color:var(--muted)}.display{font-family:"Playfair Display",serif;font-weight:500;font-size:clamp(42px,5vw,70px);line-height:1;letter-spacing:-.045em;margin:16px 0}.body{color:var(--muted);line-height:1.75;font-size:16px;max-width:560px}
+.services{background:var(--cream)}.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:32px}.service{padding:28px;background:#fff;border:1px solid var(--line);min-height:230px;display:flex;flex-direction:column;justify-content:space-between;transition:.25s}.service:hover{transform:translateY(-4px);box-shadow:0 15px 35px #19372814}.num{font-size:12px;color:var(--muted)}.service h3{font-family:"Playfair Display",serif;font-size:30px;margin:0 0 10px}.service p{color:var(--muted);line-height:1.6;font-size:14px;margin:0}
+.projects-head{display:flex;justify-content:space-between;gap:30px;align-items:end}.project-grid{display:grid;grid-template-columns:1.3fr .7fr;gap:14px;margin-top:50px}.project{position:relative;overflow:hidden;min-height:520px}.project.small{min-height:250px}.project img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s}.project:hover img{transform:scale(1.04)}.project-label{position:absolute;left:22px;bottom:20px;color:#fff;text-shadow:0 1px 12px #000;background:#0000002e;padding:8px 10px;border-radius:8px;backdrop-filter:blur(4px)}.stack{display:grid;gap:14px}
+.values{background:var(--ink);color:#fff}.values .body,.values .kicker{color:#ffffffa1}.value-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:35px;margin-top:32px}.value{border-top:1px solid #ffffff33;padding-top:18px}.value h3{font-size:17px;margin:0 0 10px}.value p{color:#ffffff9e;font-size:14px;line-height:1.6;margin:0}
+.process{display:grid;grid-template-columns:.8fr 1.2fr;gap:100px}.steps{border-top:1px solid var(--line)}.step{display:grid;grid-template-columns:50px 1fr;gap:20px;padding:24px 0;border-bottom:1px solid var(--line)}.step span{color:var(--muted);font-size:12px}.step h3{margin:0 0 7px;font-size:18px}.step p{margin:0;color:var(--muted);font-size:14px;line-height:1.6}
+.quote{background:var(--light)}.quote-inner{max-width:920px}blockquote{font-family:"Playfair Display",serif;font-size:clamp(34px,5vw,62px);line-height:1.04;letter-spacing:-.04em;margin:20px 0 30px}.quote-author{font-size:13px;color:var(--muted)}
+.booking{background:var(--cream)}.booking-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:70px}.booking-card{background:#fff;border:1px solid var(--line);padding:30px;border-radius:4px}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}label{display:block;font-size:12px;color:var(--muted);margin-bottom:7px}input,textarea{width:100%;border:1px solid var(--line);background:#fbfbf8;padding:13px 14px;border-radius:8px;outline:none}textarea{min-height:100px;resize:vertical}.full{grid-column:1/-1}.slots{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin-top:10px}.slot{padding:12px 7px;border:1px solid var(--line);background:#fff;border-radius:8px;cursor:pointer;font-size:13px}.slot:hover,.slot.selected{background:var(--ink);color:#fff;border-color:var(--ink)}.success{display:none;padding:22px;background:var(--light);border-radius:10px;margin-top:18px}
+footer{padding:30px 5vw;border-top:1px solid var(--line);display:flex;justify-content:space-between;color:var(--muted);font-size:12px}
+@media(max-width:850px){.navlinks{display:none}.hero{min-height:680px}.hero-card{display:none}section{padding:78px 5vw}.intro,.process,.booking-grid{grid-template-columns:1fr;gap:40px}.service-grid,.value-grid{grid-template-columns:1fr 1fr}.project-grid{grid-template-columns:1fr}.project{min-height:400px}.nav{padding:18px 5vw}.hero-inner{margin-bottom:55px}}
+@media(max-width:560px){.service-grid,.value-grid,.form-grid{grid-template-columns:1fr}.full{grid-column:auto}.slots{grid-template-columns:1fr 1fr}.project{min-height:330px}footer{display:block;line-height:1.8}h1{font-size:57px}}
+</style>
+</head>
+<body>
+<nav class="nav"><a class="brand" href="#">EVERGREEN<span style="font-weight:400">.</span></a><div class="navlinks"><a href="#services">Services</a><a href="#projects">Projects</a><a href="#process">Process</a><a href="#contact">Contact</a></div><a class="navcta" href="#booking">Get a free estimate</a></nav>
+<header class="hero"><div class="hero-inner"><div class="eyebrow">Landscaping • Lawn care • Outdoor living</div><h1>Outdoor spaces,<br>handled right.</h1><p class="hero-copy">From a cleaner lawn to a complete backyard transformation, we create outdoor spaces that feel good to come home to.</p><div class="actions"><a class="btn primary" href="#booking">Get a free estimate</a><a class="btn ghost" href="#projects">View our work</a></div></div><div class="hero-card"><img src="https://images.unsplash.com/photo-1598902108854-10e335adac99?auto=format&fit=crop&w=700&q=80" alt="Finished landscape"><small>Featured project</small><strong>Desert Modern</strong><div style="color:#617169;font-size:12px;margin-top:5px">Complete backyard transformation</div></div></header>
+<section><div class="wrap intro"><div><div class="kicker">Built for real homes</div><div class="display">A better yard starts with a better plan.</div></div><div><p class="body">We combine thoughtful design, dependable maintenance, and quality installation to make outdoor projects easier from the first conversation to the final cleanup.</p><a class="btn dark" href="#booking" style="display:inline-block;margin-top:20px">Talk to our team →</a></div></div></section>
+<section class="services" id="services"><div class="wrap">
+<div class="kicker">What we do</div>
+<div class="display">Everything your yard needs.</div>
+<div class="service-grid">
+<article class="service"><span class="num">01</span><div><h3>Lawn care</h3><p>Mowing, edging, cleanup, and seasonal maintenance.</p></div></article>
+<article class="service"><span class="num">02</span><div><h3>Landscape design</h3><p>Thoughtful planting and layouts built around your home.</p></div></article>
+<article class="service"><span class="num">03</span><div><h3>Yard makeovers</h3><p>Cleanups, planting, irrigation, and hardscaping.</p></div></article>
+</div></div></section>
+
+<section id="projects"><div class="wrap">
+<div class="projects-head"><div><div class="kicker">Our work</div><div class="display">Built to look good.</div></div>
+<p class="body" style="max-width:350px">A few examples of what we can do for your outdoor space.</p></div>
+<div class="project-grid">
+<div class="project"><img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1300&q=85" alt="Modern backyard"><div class="project-label"><strong>North Ridge</strong><br><small>Full landscape renovation</small></div></div>
+<div class="project small"><img src="https://images.unsplash.com/photo-1598902108854-10e335adac99?auto=format&fit=crop&w=1000&q=85" alt="Garden"><div class="project-label"><strong>Oak Street</strong><br><small>Planting + mulch</small></div></div>
+</div></div></section>
+
+<section class="booking" id="booking"><div class="wrap booking-grid"><div><div class="kicker">Start your project</div><div class="display">Let's talk about your yard.</div><p class="body">Request a free estimate and choose a time that works for you.</p></div><div class="booking-card"><form id="bookingForm"><div class="form-grid">
+<div><label>Name</label><input id="name" required placeholder="Your name"></div><div><label>Phone</label><input id="phone" required placeholder="(555) 123-4567"></div>
+<div class="full"><label>Email</label><input id="email" type="email" required placeholder="you@example.com"></div>
+<div class="full"><label>What can we help with?</label><textarea id="request" required placeholder="Tell us a little about the project..."></textarea></div>
+<div class="full"><label>Choose an estimate time</label><div class="slots">
+<button type="button" class="slot" data-time="Tue · 9:00 AM">Tue · 9:00 AM</button><button type="button" class="slot" data-time="Tue · 2:30 PM">Tue · 2:30 PM</button><button type="button" class="slot" data-time="Wed · 10:00 AM">Wed · 10:00 AM</button><button type="button" class="slot" data-time="Wed · 3:00 PM">Wed · 3:00 PM</button><button type="button" class="slot" data-time="Thu · 11:30 AM">Thu · 11:30 AM</button><button type="button" class="slot" data-time="Fri · 1:00 PM">Fri · 1:00 PM</button>
+</div></div><div class="full"><button class="btn dark" type="submit" style="width:100%">Confirm estimate request →</button></div></div></form><div class="success" id="success"><strong>You're on the calendar.</strong><p id="successText" style="margin:8px 0 0;color:#617169;font-size:14px"></p></div></div></div></section>
+<footer id="contact"><div>EVERGREEN. · Outdoor spaces, handled right.</div><div>Demo website by Northframe · Calendar + lead capture ready</div></footer>
+<script>
+let selected="";const slots=[...document.querySelectorAll(".slot")];slots.forEach(s=>s.onclick=()=>{slots.forEach(x=>x.classList.remove("selected"));s.classList.add("selected");selected=s.dataset.time});
+document.getElementById("bookingForm").onsubmit=e=>{e.preventDefault();if(!selected)return alert("Please choose an estimate time.");const n=document.getElementById("name").value.trim();document.getElementById("successText").textContent=`${n}, your estimate request for ${selected} is confirmed in this demo. A real build can create the calendar event and save the lead automatically.`;document.getElementById("success").style.display="block";document.getElementById("bookingForm").style.display="none";document.getElementById("success").scrollIntoView({behavior:"smooth",block:"center"})};
+</script>
+</body></html>
